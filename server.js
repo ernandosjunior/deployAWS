@@ -33,7 +33,7 @@ server.get('/', async (req, res) => {
   });
 
   await browser.close();
-
+//Coloca as alteações no front
   res.send({
     "dolar":pageGoogle.dolar,
     "valorChia":chia.valorChia,
