@@ -33,7 +33,7 @@ server.get('/', async (req, res) => {
   });
 
   await browser.close();
-//tentando commitar
+
   res.send({
     "dolar":pageGoogle.dolar,
     "valorChia":chia.valorChia,
