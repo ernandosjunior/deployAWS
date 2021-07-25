@@ -7,6 +7,11 @@ function rendimentoMesChia(string){
   valor = valor.replace("$","");
   return valor
 }
+server.get('/testando', async (req,res) => {
+  res.send({
+    "dolar":"pageGoogle.dolar"
+  })
+});
 server.get('/', async (req, res) => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
